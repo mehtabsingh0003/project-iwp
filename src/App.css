@@ -11,7 +11,7 @@ body {
   text-align: center;
   color: #333;
   padding: 20px;
-  min-height: 100vh; /* Ensure full height of the app */
+  min-height: 100vh;
 }
 
 .dark-mode {
@@ -27,7 +27,7 @@ header {
 }
 
 .app-title {
-  font-size: 2rem; /* Larger title */
+  font-size: 2rem;
   color: #61dafb;
 }
 
@@ -36,19 +36,19 @@ header {
   margin: 20px 0;
   display: flex;
   justify-content: center;
-  gap: 40px; /* Increased space between nav links */
+  gap: 40px;
 }
 
 .nav-link {
   color: #61dafb;
   text-decoration: none;
-  font-weight: 600; /* Slightly bolder font */
+  font-weight: 600;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .nav-link:hover {
-  color: #ff4757; /* Change color on hover */
-  transform: scale(1.05); /* Slight scale effect on hover */
+  color: #ff4757;
+  transform: scale(1.05);
 }
 
 /* TrackList and TrackCard */
@@ -59,36 +59,34 @@ header {
 .tracks {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Increased gap */
+  gap: 20px;
   justify-content: center;
 }
 
-/* Enhanced card styles for better visual appeal */
 .track-card {
   background: #fff;
-  border-radius: 12px; /* Slightly rounder corners */
+  border-radius: 12px;
   padding: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  width: 220px; /* Increased card width */
+  width: 220px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .track-card:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
+  transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .track-card img {
-  border-radius: 10px; /* Round image corners */
+  border-radius: 10px;
   max-width: 100%;
-  height: auto;
 }
 
 .track-card .track-title {
   font-weight: bold;
-  font-size: 1.4rem; /* Increased title size */
-  margin: 10px 0; /* Space around title */
+  font-size: 1.4rem;
+  margin: 10px 0;
 }
 
 .track-card .favorite-btn {
@@ -100,13 +98,13 @@ header {
 }
 
 .track-card .favorite-btn:hover {
-  color: #e84118; /* Darker shade on hover */
-  transform: scale(1.1); /* Slightly grow on hover */
+  color: #e84118;
+  transform: scale(1.1);
 }
 
 /* SearchBar */
 .search-bar {
-  margin-bottom: 20px; /* Space below search bar */
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
@@ -114,16 +112,16 @@ header {
 .search-bar input {
   padding: 10px;
   width: 80%;
-  max-width: 400px; /* Limit maximum width for larger screens */
+  max-width: 400px;
   border-radius: 5px;
   border: 1px solid #ddd;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .search-bar input:focus {
-  border-color: #61dafb; /* Highlight border on focus */
-  outline: none; /* Remove default outline */
-  box-shadow: 0 0 5px rgba(97, 218, 251, 0.5); /* Subtle shadow on focus */
+  border-color: #61dafb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
 }
 
 /* Theme Toggle */
@@ -138,8 +136,8 @@ header {
 }
 
 .theme-toggle:hover {
-  background-color: #61dafb; /* Change background on hover */
-  transform: scale(1.05); /* Slight scale effect on hover */
+  background-color: #61dafb;
+  transform: scale(1.05);
 }
 
 /* Footer */
@@ -148,35 +146,31 @@ footer {
   padding: 20px;
   background-color: #282c34;
   color: #61dafb;
-  position: relative; /* Position footer correctly */
-  bottom: 0;
   width: 100%;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-  text-align: center; /* Center the text */
+  text-align: center;
 }
 
-/* Footer Social Icons */
 .social-icons {
-  margin-top: 10px; /* Space above social icons */
+  margin-top: 10px;
   display: flex;
-  justify-content: center; /* Center the icons horizontally */
-  gap: 15px; /* Space between icons */
+  justify-content: center;
+  gap: 15px;
 }
 
 .social-icons a {
-  color: #61dafb; /* Icon color */
-  font-size: 1.5rem; /* Increase icon size */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  color: #61dafb;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .social-icons a:hover {
-  color: #ff4757; /* Change icon color on hover */
-  transform: scale(1.1); /* Slight scale effect on hover */
+  color: #ff4757;
+  transform: scale(1.1);
 }
 
-
 /* Recommendations Section */
-.recommendations {
+.recommendations, .profile {
   margin: 20px 0;
   padding: 20px;
   background-color: #fff;
@@ -190,43 +184,33 @@ footer {
   border-bottom: 1px solid #ddd;
 }
 
-/* User Profile */
-.profile {
-  text-align: left;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.avatar {
-  width: 100px; /* Set a fixed size for avatar */
-  height: 100px; /* Maintain aspect ratio */
-  border-radius: 50%; /* Make it circular */
-  border: 2px solid #61dafb; /* Border around avatar */
+.profile .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #61dafb;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Stack links vertically */
+    flex-direction: column;
   }
 
-  .navbar .nav-link {
-    margin: 10px 0; /* Space between links */
+  .nav-link {
+    margin: 10px 0;
   }
 
   .search-bar input {
-    width: 90%; /* Increase width for mobile */
+    width: 90%;
   }
 
   .track-card {
-    width: 90%; /* Make cards responsive */
+    width: 90%;
   }
 
   .avatar {
-    width: 80px; /* Adjust avatar size for mobile */
+    width: 80px;
     height: 80px;
   }
 }

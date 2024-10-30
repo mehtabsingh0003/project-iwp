@@ -1,5 +1,5 @@
 // src/data.js
-export default [
+const tracks = [
     {
         id: 1,
         title: 'Song One',
@@ -46,3 +46,5 @@ export default [
         coverArt: 'https://example.com/song-five-cover.jpg'
     }
 ];
+
+export default tracks;
